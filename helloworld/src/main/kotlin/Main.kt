@@ -1,4 +1,6 @@
 import com.diacht.ktest.compose.startTestUi
+//import com.diacht.ktest.library.BuildConfig
+//import me.tetiana.helloworld.BuildConfig
 import org.example.helloworld.BuildConfig
 import kotlin.math.*
 
@@ -12,9 +14,11 @@ fun iCalculate(
     x3:Int = 114,
     x4:Int = -77
 ) : Double {
-    val x: Double = (x0 * x1 * x2 * x3 * x4).toDouble()
-    val res: Double = ln(x)
-    return res
+    val x: Double = ln(x0.toDouble() * x1.toDouble() * x2.toDouble() * x3.toDouble() * x4.toDouble())
+    //val res: Double = ln(x)
+    return x
+
+    //-95*97*(-17)*114*(-77)
 }
 
 fun dCalculate(
